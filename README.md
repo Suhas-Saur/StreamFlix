@@ -1,111 +1,497 @@
-# 🎬 StreamFlix — Netflix-Style Streaming Web App
+<div align="center">
 
-StreamFlix is a premium, fully responsive streaming platform designed and built using **React + Vite**, client-side routing, local storage watchlists, and Vanilla CSS. It features a modern, dark cinematic theme with fluid animations, dynamic search, and a dual-mode API service.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:E50914&height=220&section=header&text=STREAMFLIX&fontSize=65&fontColor=ffffff&fontAlignY=38&desc=Netflix-Style%20Streaming%20Web%20Application&descAlignY=60&descSize=20" width="100%"/>
 
----
+<h1>🎬 StreamFlix</h1>
 
-## 🚀 Live Demo & Launch
+<p>
+  <b>A modern Netflix-inspired streaming platform built with React + Vite</b>
+</p>
 
-Follow these steps to run the application locally:
+<p>
+  Browse movies • Search titles • Watch trailers • Manage My List
+</p>
 
-### 1. Installation
-Bypass certificate limitations and install dependencies:
-```bash
-npm config set strict-ssl false
-npm install
-```
+<br>
 
-### 2. Run the Development Server
-```bash
-npm run dev
-```
-Open **[http://localhost:5173/](http://localhost:5173/)** in your browser.
+<a href="#features">
+<img src="https://img.shields.io/badge/Features-Explore-E50914?style=for-the-badge"/>
+</a>
 
----
+<a href="#technology">
+<img src="https://img.shields.io/badge/Tech%20Stack-React-61DAFB?style=for-the-badge"/>
+</a>
 
-## 🌟 Key Features
+<a href="#installation">
+<img src="https://img.shields.io/badge/Run%20Locally-000000?style=for-the-badge&logo=vercel"/>
+</a>
 
-* **Cinematic Hero Banner**: Showcases featured trending movies with titles, ratings, synopses, and quick navigation actions.
-* **Horizontal Row Sliders**: Netflix-style content rows (Trending, Popular, Top Rated, Action, Sci-Fi, Horror, Animation, Recently Added) with smooth horizontal mouse-scroll and arrow controllers.
-* **Pop-Out Movie Cards**: Movie posters expand into detailed cards on hover, showing rating, genres, year, descriptions, and quick buttons.
-* **Robust YouTube Player**: Integrates official movie trailers in responsive 16:9 overlays, including full-screen controls and loading overlays.
-* **Persistent My List**: Add or remove titles from your watchlist, saved to `localStorage` and synchronized across pages in real time.
-* **Dynamic Search & Debouncing**: Type in the navigation bar search bar to get instant redirected results with built-in input debouncing.
-* **Genre Filter Catalog**: Browse movies and series categorized under specific genres.
-* **Failover Safety**: If a trailer fails to resolve, a clean fallback UI with a **"Trailer unavailable"** notice and a **"Back to Movies"** link is rendered to protect the user experience.
+</div>
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+<h2>🍿 About StreamFlix</h2>
 
-* **Framework**: React 19 (Vite bundler)
-* **Styling**: Vanilla CSS (Fluid layouts & transitions)
-* **Icons**: `lucide-react`
-* **Routing**: `react-router-dom`
-* **API Service**: TMDB (The Movie Database) API with automatic local mock fallbacks.
+<p>
+StreamFlix is a Netflix-style streaming web application designed to provide a
+cinematic movie browsing experience directly from the browser.
+</p>
 
----
-
-## 📡 Dynamic TMDB Dual-Mode
-
-StreamFlix is built to work immediately out-of-the-box, even without an internet connection or API keys:
-
-1. **TMDB Mode (Active)**: If you provide a TMDB API Key in your environment variable:
-   * Create a `.env` file in the root directory.
-   * Add: `VITE_TMDB_API_KEY=YOUR_TMDB_API_KEY`.
-   * The app will fetch live movie posters, credits, casts, dynamic categories, and trailer keys from TMDB.
-2. **Local Fallback Mode (Offline)**: If the `.env` file is missing or API limits are hit, the service automatically redirects query requests to the pre-seeded [`src/data/movies.js`](src/data/movies.js) database. This contains 12 cinematic blockbusters with fully configured poster backdrops and working trailer IDs.
+<p>
+The application combines a dark streaming interface with dynamic movie
+discovery, search, categories, movie details, trailer playback, and a
+persistent personal watchlist.
+</p>
 
 ---
 
-## 📂 Project Architecture
+<div align="center">
 
-```
-netflix_clone/
-├── public/                 # Static assets
+<h2>🎥 The Experience</h2>
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+<h3>🏠</h3>
+<b>Home</b>
+<br><br>
+Discover trending and popular movies through a cinematic homepage.
+
+</td>
+
+<td align="center" width="25%">
+
+<h3>🔎</h3>
+<b>Search</b>
+<br><br>
+Search and find movies quickly using dynamic movie data.
+
+</td>
+
+<td align="center" width="25%">
+
+<h3>▶️</h3>
+<b>Watch</b>
+<br><br>
+Open movie details and watch available trailers.
+
+</td>
+
+<td align="center" width="25%">
+
+<h3>❤️</h3>
+<b>My List</b>
+<br><br>
+Save movies and keep your personal watchlist across sessions.
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<h2 id="features">✨ Features</h2>
+
+<table>
+<tr>
+<td width="50%">
+
+<h3>🎬 Cinematic Interface</h3>
+
+<ul>
+<li>Netflix-inspired dark interface</li>
+<li>Large hero movie banner</li>
+<li>Cinematic movie backdrops</li>
+<li>Responsive movie cards</li>
+<li>Smooth hover animations</li>
+</ul>
+
+</td>
+
+<td width="50%">
+
+<h3>📚 Movie Discovery</h3>
+
+<ul>
+<li>Trending movies</li>
+<li>Popular movies</li>
+<li>Top-rated movies</li>
+<li>Action</li>
+<li>Adventure</li>
+<li>Sci-Fi</li>
+<li>Horror</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<h3>🔎 Smart Search</h3>
+
+<ul>
+<li>Dynamic movie search</li>
+<li>Search results without page reload</li>
+<li>Movie poster previews</li>
+<li>Movie information</li>
+</ul>
+
+</td>
+
+<td>
+
+<h3>▶️ Video Experience</h3>
+
+<ul>
+<li>Dedicated watch page</li>
+<li>Responsive video player</li>
+<li>Movie trailer playback</li>
+<li>Movie information below player</li>
+<li>Playback error handling</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+---
+
+<h2>🧠 How StreamFlix Works</h2>
+
+<div align="center">
+
+<table>
+<tr>
+
+<td align="center">
+<h3>01</h3>
+📡
+<br>
+<b>Movie Data</b>
+<br>
+Movie information is retrieved through the movie API.
+</td>
+
+<td align="center">➜</td>
+
+<td align="center">
+<h3>02</h3>
+🖼️
+<br>
+<b>Movie Discovery</b>
+<br>
+Posters, ratings, genres and descriptions are displayed.
+</td>
+
+<td align="center">➜</td>
+
+<td align="center">
+<h3>03</h3>
+🎬
+<br>
+<b>Watch</b>
+<br>
+Users open a movie and access its available trailer.
+</td>
+
+<td align="center">➜</td>
+
+<td align="center">
+<h3>04</h3>
+❤️
+<br>
+<b>My List</b>
+<br>
+Movies are stored locally for later viewing.
+</td>
+
+</tr>
+</table>
+
+</div>
+
+---
+
+<h2 id="technology">🛠️ Technology Stack</h2>
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="55"/>
+
+<br>
+<b>React</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55"/>
+
+<br>
+<b>JavaScript</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55"/>
+
+<br>
+<b>HTML5</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55"/>
+
+<br>
+<b>CSS3</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" width="55"/>
+
+<br>
+<b>Vite</b>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+---
+
+<h2>🏗️ Project Architecture</h2>
+
+<pre>
+StreamFlix/
+│
+├── public/
+│
 ├── src/
-│   ├── components/         # Reusable presentational components
-│   │   ├── Navbar.jsx      # Fixed header with search and responsive collapse
-│   │   ├── HeroBanner.jsx  # Billboard showcase
-│   │   ├── MovieRow.jsx    # Horizontal row container
-│   │   ├── MovieCard.jsx   # Hover cards with pop-out details
-│   │   ├── MoviePlayer.jsx # YouTube iframe player wrapper
-│   │   ├── LoadingSpinner.jsx
-│   │   └── ErrorMessage.jsx
-│   ├── pages/              # Router view screens
-│   │   ├── Home.jsx        # Landing dashboard rows
-│   │   ├── Movies.jsx      # Genre filtering grid
-│   │   ├── Search.jsx      # Query-driven results
-│   │   ├── MyList.jsx      # LocalStorage watchlist grid
-│   │   └── Watch.jsx       # Player layout and credits sidebar
-│   ├── data/
-│   │   └── movies.js       # Fallback movies database
+│   │
+│   ├── components/
+│   │   ├── Navbar
+│   │   ├── HeroBanner
+│   │   ├── MovieCard
+│   │   ├── MovieRow
+│   │   ├── MovieDetails
+│   │   ├── MoviePlayer
+│   │   └── SearchBar
+│   │
+│   ├── pages/
+│   │   ├── Home
+│   │   ├── Movies
+│   │   ├── Search
+│   │   ├── MyList
+│   │   └── Watch
+│   │
 │   ├── services/
-│   │   └── tmdb.js         # Fetch coordinator
-│   ├── App.jsx             # Routes wrapper
-│   ├── main.jsx            # React root
-│   └── index.css           # Cinematic CSS rules
+│   │   └── tmdb.js
+│   │
+│   ├── data/
+│   │   └── movies.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
 ├── package.json
-└── vite.config.js
-```
+├── vite.config.js
+└── README.md
+</pre>
 
 ---
 
-## 📤 Push StreamFlix to Your GitHub
+<h2>🎯 Core Functionality</h2>
 
-To upload this project to your personal GitHub account, execute the following commands in your terminal:
+<table>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+</tr>
 
-```bash
-# 1. Stage and commit files locally
-git add .
-git commit -m "Initial commit: Complete StreamFlix streaming application"
+<tr>
+<td>Netflix-style UI</td>
+<td>✅ Implemented</td>
+</tr>
 
-# 2. Add your GitHub repository link as remote
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+<tr>
+<td>Movie browsing</td>
+<td>✅ Implemented</td>
+</tr>
 
-# 3. Rename branch to main (if not already main)
-git branch -M main
+<tr>
+<td>Movie search</td>
+<td>✅ Implemented</td>
+</tr>
 
-# 4. Push to GitHub
-git push -u origin main
-```
+<tr>
+<td>Movie details</td>
+<td>✅ Implemented</td>
+</tr>
+
+<tr>
+<td>Trailer playback</td>
+<td>✅ Implemented</td>
+</tr>
+
+<tr>
+<td>My List</td>
+<td>✅ Implemented</td>
+</tr>
+
+<tr>
+<td>Local storage</td>
+<td>✅ Implemented</td>
+</tr>
+
+<tr>
+<td>Responsive design</td>
+<td>✅ Implemented</td>
+</tr>
+
+<tr>
+<td>React routing</td>
+<td>✅ Implemented</td>
+</tr>
+
+</table>
+
+---
+
+<h2>🚀 Installation</h2>
+
+<p>Clone the repository and install the dependencies:</p>
+
+<pre>
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+cd StreamFlix
+
+npm install
+
+npm run dev
+</pre>
+
+<p>
+Open the localhost address shown in your terminal.
+</p>
+
+---
+
+<h2>🎮 User Flow</h2>
+
+<div align="center">
+
+<pre>
+
+        🏠 HOME
+           │
+           ▼
+    🎬 Browse Movies
+           │
+           ▼
+       🖱️ Select Movie
+           │
+           ▼
+     📖 Movie Details
+           │
+       ┌───┴───┐
+       ▼       ▼
+     ▶️ Play   ❤️ My List
+       │
+       ▼
+   🎥 Trailer Player
+       │
+       ▼
+   🔙 Back to Movies
+
+</pre>
+
+</div>
+
+---
+
+<h2>🔐 Data & Storage</h2>
+
+<p>
+StreamFlix uses browser localStorage to maintain the user's personal movie
+watchlist. This allows saved movies to remain available after refreshing the
+browser.
+</p>
+
+---
+
+<h2>⚡ Performance</h2>
+
+<ul>
+<li>React component architecture</li>
+<li>Vite development environment</li>
+<li>Reusable movie components</li>
+<li>Client-side routing</li>
+<li>Responsive layouts</li>
+<li>Local watchlist persistence</li>
+</ul>
+
+---
+
+<h2>📱 Responsive Design</h2>
+
+<p>
+StreamFlix is designed for desktop, tablet and mobile screens.
+</p>
+
+<table>
+<tr>
+<td align="center">🖥️<br><b>Desktop</b></td>
+<td align="center">💻<br><b>Laptop</b></td>
+<td align="center">📱<br><b>Mobile</b></td>
+</tr>
+</table>
+
+---
+
+<h2>⚠️ Content Notice</h2>
+
+<p>
+StreamFlix is an educational project demonstrating the development of a
+streaming-style web interface.
+</p>
+
+<p>
+Movie metadata and promotional trailers should be sourced through appropriate
+legal services. The project does not host or distribute copyrighted full-length
+movies.
+</p>
+
+---
+
+<div align="center">
+
+<h2>🎬 StreamFlix</h2>
+
+<p>
+<b>Browse. Search. Watch. Save.</b>
+</p>
+
+<p>
+Built with ❤️ using React + Vite
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E50914,50:8B0000,100:000000&height=120&section=footer" width="100%"/>
+
+</div>
