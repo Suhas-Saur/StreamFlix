@@ -14,8 +14,8 @@
 
 <br>
 
-<a href="#live-demo">
-<img src="https://img.shields.io/badge/Live%20Demo-Open-E50914?style=for-the-badge"/>
+<a href="https://suhas-saur.github.io/StreamFlix/" target="_blank">
+<img src="https://img.shields.io/badge/▶️_Live_Demo-Open_App-E50914?style=for-the-badge&logo=vlc&logoColor=white"/>
 </a>
 
 <a href="#features">
@@ -23,7 +23,7 @@
 </a>
 
 <a href="#technology">
-<img src="https://img.shields.io/badge/Tech%20Stack-React-61DAFB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Tech%20Stack-React-61DAFB?style=for-the-badge&logo=react"/>
 </a>
 
 <a href="#installation">
@@ -34,17 +34,38 @@
 
 ---
 
-<h2 id="live-demo">🚀 Live Demo</h2>
+<div align="center">
 
-<p align="center">
-  <a href="https://suhas-saur.github.io/StreamFlix/">
-    <b>👉 Open Live Demo</b>
-  </a>
+<h2 id="live-demo">🍿 Live Demo</h2>
+
+<p>
+  Experience <b>StreamFlix</b> live directly in your browser!
 </p>
 
-<p align="center">
-  <b>Production URL:</b> <a href="https://suhas-saur.github.io/StreamFlix/">https://suhas-saur.github.io/StreamFlix/</a>
-</p>
+<br>
+
+<a href="https://suhas-saur.github.io/StreamFlix/" target="_blank">
+  <img src="https://img.shields.io/badge/▶️_LAUNCH_STREAMFLIX_NOW-E50914?style=for-the-badge&logoColor=white" height="48"/>
+</a>
+
+<br><br>
+
+<table>
+  <tr>
+    <td align="center"><b>🌐 Production URL</b></td>
+    <td align="center"><a href="https://suhas-saur.github.io/StreamFlix/"><b>https://suhas-saur.github.io/StreamFlix/</b></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>🟢 Status</b></td>
+    <td align="center"><b>Active & Online</b> (Permanent 24/7 Deployment)</td>
+  </tr>
+  <tr>
+    <td align="center"><b>☁️ Host Platform</b></td>
+    <td align="center"><b>GitHub Pages</b></td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
