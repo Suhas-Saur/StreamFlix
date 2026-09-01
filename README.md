@@ -14,6 +14,10 @@
 
 <br>
 
+<a href="#live-demo">
+<img src="https://img.shields.io/badge/Live%20Demo-Open-E50914?style=for-the-badge"/>
+</a>
+
 <a href="#features">
 <img src="https://img.shields.io/badge/Features-Explore-E50914?style=for-the-badge"/>
 </a>
@@ -23,10 +27,24 @@
 </a>
 
 <a href="#installation">
-<img src="https://img.shields.io/badge/Run%20Locally-000000?style=for-the-badge&logo=vercel"/>
+<img src="https://img.shields.io/badge/Run%20Locally-000000?style=for-the-badge"/>
 </a>
 
 </div>
+
+---
+
+<h2 id="live-demo">🚀 Live Demo</h2>
+
+<p align="center">
+  <a href="https://suhas-saur.github.io/StreamFlix/">
+    <b>👉 Open Live Demo</b>
+  </a>
+</p>
+
+<p align="center">
+  <b>Production URL:</b> <a href="https://suhas-saur.github.io/StreamFlix/">https://suhas-saur.github.io/StreamFlix/</a>
+</p>
 
 ---
 
@@ -389,6 +407,20 @@ npm run dev
 
 <p>
 Open the localhost address shown in your terminal.
+</p>
+
+---
+
+<h2>🌐 Deployment</h2>
+
+<p>
+This project is deployed independently from the development environment.
+</p>
+
+<p>
+<b>Production:</b> <a href="https://suhas-saur.github.io/StreamFlix/">https://suhas-saur.github.io/StreamFlix/</a><br>
+<b>Hosting:</b> GitHub Pages / Vercel<br>
+<b>Repository:</b> <a href="https://github.com/Suhas-Saur/StreamFlix">https://github.com/Suhas-Saur/StreamFlix</a>
 </p>
 
 ---
