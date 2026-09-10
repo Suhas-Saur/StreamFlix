@@ -154,5 +154,83 @@ export const movies = [
     poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80",
     backdrop: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
     youtubeId: "mKk2NveE6w8"
+  },
+  {
+    id: 13,
+    title: "Oppenheimer",
+    description: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.",
+    rating: 8.9,
+    year: 2023,
+    runtime: "3h 00m",
+    genres: ["Drama", "History", "Trending Now"],
+    cast: ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr."],
+    poster: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=500&q=80",
+    backdrop: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+    youtubeId: "uYPbbksJxIg"
+  },
+  {
+    id: 14,
+    title: "Dune: Part Two",
+    description: "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+    rating: 8.6,
+    year: 2024,
+    runtime: "2h 46m",
+    genres: ["Sci-Fi", "Adventure", "Trending Now"],
+    cast: ["Timothée Chalamet", "Zendaya", "Rebecca Ferguson", "Javier Bardem"],
+    poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80",
+    backdrop: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
+    youtubeId: "Way9Dexny3w"
+  },
+  {
+    id: 15,
+    title: "The Matrix",
+    description: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth: the world he knows is an elaborate deception.",
+    rating: 8.7,
+    year: 1999,
+    runtime: "2h 16m",
+    genres: ["Sci-Fi", "Action", "Recently Added"],
+    cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving"],
+    poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&q=80",
+    backdrop: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    youtubeId: "vKQi3bBA1y8"
+  },
+  {
+    id: 16,
+    title: "Cyberpunk: Edgerunners",
+    description: "A street kid trying to survive in a technology and body modification-obsessed city of the future decides to become an edgerunner mercenary.",
+    rating: 8.3,
+    year: 2022,
+    runtime: "10 Episodes",
+    genres: ["Animation", "Sci-Fi", "Action"],
+    cast: ["KENN", "Aoi Yuuki", "Hiroki Touchi", "Michiko Kaiden"],
+    poster: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80",
+    backdrop: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+    youtubeId: "JtqIas3bYhg"
+  },
+  {
+    id: 17,
+    title: "Blade Runner 2049",
+    description: "Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.",
+    rating: 8.0,
+    year: 2017,
+    runtime: "2h 44m",
+    genres: ["Sci-Fi", "Mystery", "Recently Added"],
+    cast: ["Ryan Gosling", "Harrison Ford", "Ana de Armas", "Sylvia Hoeks"],
+    poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80",
+    backdrop: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1200&q=80",
+    youtubeId: "gCcx85zbxz4"
+  },
+  {
+    id: 18,
+    title: "Godzilla x Kong: The New Empire",
+    description: "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
+    rating: 7.3,
+    year: 2024,
+    runtime: "1h 55m",
+    genres: ["Action", "Sci-Fi", "Adventure"],
+    cast: ["Rebecca Hall", "Brian Tyree Henry", "Dan Stevens", "Kaylee Hottle"],
+    poster: "https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=500&q=80",
+    backdrop: "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?auto=format&fit=crop&w=1200&q=80",
+    youtubeId: "lV1OOlGwExM"
   }
 ];

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Plus, Check, ThumbsUp, Download, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Plus, Check, ThumbsUp, Download, ExternalLink, Share2 } from 'lucide-react';
 import { tmdbService } from '../services/tmdb';
 import MoviePlayer from '../components/MoviePlayer';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -15,6 +15,7 @@ const Watch = () => {
   const [error, setError] = useState(null);
   const [inList, setInList] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     let isMounted = true;
@@ -71,6 +72,12 @@ const Watch = () => {
     setIsLiked(!isLiked);
   };
 
+  const handleShare = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
+
   if (loading) return <LoadingSpinner />;
   if (error || !movie) return <ErrorMessage message={error || "Movie details not available."} />;
 
@@ -95,6 +102,7 @@ const Watch = () => {
             <span className="rating-badge">{movie.rating} Rating</span>
             <span className="year-badge">{movie.year}</span>
             <span className="runtime-badge">{movie.runtime}</span>
+            <span className="hero-badge" style={{ borderColor: '#e50914', color: '#fff', backgroundColor: 'rgba(229,9,20,0.2)' }}>1080p Ultra HD</span>
             {movie.youtubeId && <span className="hero-badge">Trailer Available</span>}
             {movie.videoUrl && <span className="hero-badge" style={{ borderColor: '#46d369', color: '#46d369' }}>Free Full Movie</span>}
           </div>
@@ -118,6 +126,15 @@ const Watch = () => {
             >
               <ThumbsUp size={18} fill={isLiked ? 'currentColor' : 'none'} />
               {isLiked ? "Liked" : "Like Title"}
+            </button>
+
+            {/* Share */}
+            <button
+              className={`btn-action ${copied ? 'active' : ''}`}
+              onClick={handleShare}
+            >
+              {copied ? <Check size={18} /> : <Share2 size={18} />}
+              {copied ? "Link Copied!" : "Share Title"}
             </button>
 
             {/* Download option */}
