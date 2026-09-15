@@ -4,7 +4,6 @@ import MovieCard from '../components/MovieCard';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';
 import { tmdbService } from '../services/tmdb';
-import { movies as localMovies } from '../data/movies';
 
 const GenresList = [
   { id: "all", name: "All Genres" },
